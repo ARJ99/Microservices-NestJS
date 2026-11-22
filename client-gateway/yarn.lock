@@ -842,6 +842,35 @@
   dependencies:
     "@tybys/wasm-util" "^0.10.3"
 
+"@nats-io/nats-core@3.5.0":
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/@nats-io/nats-core/-/nats-core-3.5.0.tgz#e90facdc0801256044dec54173059662fcdd6108"
+  integrity sha512-iHsKhlzINdpL27pxvbHhBLRs4mnAKDfYrXMReBDNqvhKb/yVxz+Vz2rXujBAUiMsfOXFzixUK4Uu/qNnDRjZvA==
+  dependencies:
+    "@nats-io/nkeys" "2.1.0"
+    "@nats-io/nuid" "3.1.0"
+
+"@nats-io/nkeys@2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@nats-io/nkeys/-/nkeys-2.1.0.tgz#fb52504cbfdd3aed1c5279dd720ee8be3f15374b"
+  integrity sha512-vLMgwfPouG2Utp3hHUfdmMVEGEQ202tLES/pOAOfTJR5hwWGymm2mKuo3UMYv9kNw7awpcTBfEAljFqZcFm1lA==
+  dependencies:
+    tweetnacl "^1.0.3"
+
+"@nats-io/nuid@3.1.0":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@nats-io/nuid/-/nuid-3.1.0.tgz#8334a973751841dc41349341bc0b6fafc7b7852d"
+  integrity sha512-NC+JksVZl0zwpwsO6aIvsivqcqzgI2db0gCris/bSdZx56CdyniphijTfcjieUpR4HwZEiiid67NEviQ16sveA==
+
+"@nats-io/transport-node@^3.5.0":
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/@nats-io/transport-node/-/transport-node-3.5.0.tgz#2654092b372192b82ece73ad923e030e78dc668c"
+  integrity sha512-5Ebt62tnQsrrb3p+aHJt0+zRHAkxbUhhD+8HnHNBTYRgXJ2X2LgvOD19EiiAISdW7yR4IQSmsdvpfX+I5oG5ew==
+  dependencies:
+    "@nats-io/nats-core" "3.5.0"
+    "@nats-io/nkeys" "2.1.0"
+    "@nats-io/nuid" "3.1.0"
+
 "@nestjs/cli@^12.0.0":
   version "12.0.10"
   resolved "https://registry.yarnpkg.com/@nestjs/cli/-/cli-12.0.10.tgz#427514ead3c9809df00d22790e759661c7aceef1"
@@ -4235,6 +4264,11 @@ tslib@2.8.1, tslib@^2.1.0, tslib@^2.4.0:
   version "2.8.1"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.8.1.tgz#612efe4ed235d567e8aba5f2a5fab70280ade83f"
   integrity sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==
+
+tweetnacl@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/tweetnacl/-/tweetnacl-1.0.3.tgz#ac0af71680458d8a6378d0d0d050ab1407d35596"
+  integrity sha512-6rt+RN7aOi1nGMyC4Xa5DdYiukl2UWCbcJft7YhxReBGQD7OAM8Pbxw6YMo4r2diNEA8FEmu32YOn9rhaiE5yw==
 
 type-detect@4.0.8:
   version "4.0.8"
