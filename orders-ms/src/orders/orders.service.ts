@@ -5,7 +5,7 @@ import { PrismaPg } from '@prisma/adapter-pg';
 import { PrismaClient } from '../generated/prisma/client';
 import { OrderPaginationDto } from './dto/order-pagination.dto';
 import { ChangeOrderStatusDto } from './dto/change-order-status.dto';
-import { PRODUCT_SERVICE } from '../config/services';
+import { NATS_SERVICE } from '../config/services';
 import { firstValueFrom } from 'rxjs';
 
 
@@ -16,7 +16,7 @@ export class OrdersService extends PrismaClient
   private readonly logger = new Logger("OrdersService");
 
   constructor(
-    @Inject(PRODUCT_SERVICE)
+    @Inject(NATS_SERVICE)
     private readonly productsClient: ClientProxy,
   ) {
     super({
